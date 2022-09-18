@@ -51,8 +51,6 @@
     }
 
     const sendFetchRequest = (url, acceptedType) => {
-      console.log(`${url} - ${acceptedType}`);
-
       const options = {
         method: 'GET',
         headers: {
@@ -72,7 +70,6 @@
       const sendButton = document.querySelector('#send');
 
       sendButton.addEventListener('click', () => {
-        console.log("send clicked");
         sendFetchRequest(page.value, type.value);
       });
     }
